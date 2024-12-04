@@ -1,0 +1,784 @@
+html, body {
+  font-family: "Cabin", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+/* Wrapper */
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+/* Top-part */
+
+.top-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 130px 0 130px;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/photo-background.png);
+}
+
+.name {
+  font-weight: 500;
+  font-size: 65px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 45px;
+  color: #fff;
+}
+
+/* Form */
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 1180px;
+  height: 100%;
+  max-height: 161px;
+  padding: 38px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background-color: #edf1fd;
+}
+
+.container-for-forms {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1180px;
+  height: 100%;
+  max-height: 80px;
+}
+
+.container-for-left-form {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  height: 100%;
+  max-height: 80px;
+}
+
+.container-for-name, .container-for-phone, .container-for-city, .container-for-button {
+  width: 100%;
+  max-width: 265px;
+  height: 80px;
+}
+
+.container-for-name, .container-for-phone, .container-for-city {
+  margin-right: 12px;
+}
+
+.container-for-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.your-name, .your-phone, .your-city {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 7px;
+  color: #5d5d65;
+}
+
+.form-for-name, .form-for-phone, .form-for-city {
+  width: 100%;
+  max-width: 265px;
+  height: 53px;
+  padding: 17px 0 17px 25px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #e1e1e0;
+  background-color: #fff;
+}
+
+.form-for-name::placeholder {
+  color: #e1e1e0;
+}
+
+.form-for-phone::placeholder {
+  color: #e1e1e0;
+}
+
+.form-for-city::placeholder {
+  color: #e1e1e0;
+}
+
+.book-call {
+  cursor: pointer;
+  width: 100%;
+  max-width: 265px;
+  height: 53px;
+  padding: 17px 62px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.6s;
+  background-color: #5d8bff;
+}
+
+.book-call:hover {
+  background-color: #355dc3;
+}
+
+/* Bottom-part */
+
+.bottom-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 1305px;
+  padding: 85px 130px 51px 130px;
+  box-sizing: border-box;
+  background-color: #EDF1FD;
+}
+
+.our-services {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 47px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+  color: #5d8bff;
+}
+
+/* Container-for-buttons */
+
+.container-for-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 684px;
+  height: 100%;
+  max-height: 53px;
+  margin-bottom: 30px;
+}
+
+.container-for-services-left {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 66%;
+  height: 100%;
+}
+
+.container-for-services-right {
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  height: 100%;
+}
+
+.pest-control, .disinfestation, .disinfection {
+  cursor: pointer;
+  width: 100%;
+  max-width: 215px;
+  height: 100%;
+  max-height: 53px;
+  padding: 17px 62px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.pest-control {
+  margin-right: 15px;
+  color: #fff;
+  transition: 0.6s;
+  background-color: #5d8bff;
+}
+
+.pest-control:hover {
+  background-color: #355dc3;
+}
+
+.disinfection {
+  margin-left: 10px;
+}
+
+.disinfestation, .disinfection {
+  color: #5d8bff;
+  border: 1px solid #5d8bff;
+  transition: 0.6s;
+  background-color: #EDF1FD;
+}
+
+.disinfestation:hover {
+  color: #355dc3;
+  border: 1px solid #355dc3;
+}
+
+.disinfection:hover {
+  color: #355dc3;
+  border: 1px solid #355dc3;
+}
+
+/* Container-for-parts-insects */
+
+.container-for-insects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1180px;
+  height: 927px;
+  margin-bottom: 30px;
+}
+
+.top-part-insects, .bottom-part-insects {
+  display: flex;
+  flex-direction: row;
+  width: 1180px;
+}
+
+.top-part-insects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 463px;
+}
+
+.container-top-part-left, .container-top-part-right, 
+.container-bottom-part-left, .container-bottom-part-right {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 100%;
+}
+
+.container-bottom-part-left {
+  align-items: end;
+}
+
+.container-bottom-part-right {
+  align-items: end;
+}
+
+.bottom-part-insects {
+  align-items: end;
+  height: 464px;
+}
+
+.container-insects-first, .container-insects-second, .container-insects-third, .container-insects-forth, 
+.container-insects-fifth, .container-insects-sixth, .container-insects-seventh, .container-insects-eighth {
+  width: 280px;
+  height: 453px;
+  padding: 25px 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px 0 rgba(62, 65, 159, 0.09);
+  background-color: #fff;
+}
+
+.container-insects-first, .container-insects-fifth {
+  margin-right: 20px;
+}
+
+.container-insects-second {
+  margin-right: 10px;
+}
+
+.container-insects-third, .container-insects-seventh {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.ellipse {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 84px;
+  margin-bottom: 15px;
+  border-radius: 100%;
+  background-color: #edf1fd;
+}
+
+.name-bedbugs, .name-cockroaches, .name-fleas, .name-ticks, 
+.name-ants, .name-wasps, .name-moths, .name-bark-beetles {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #141414;
+}
+
+.about-bedbugs, .about-cockroaches, .about-fleas, .about-ticks, 
+.about-ants, .about-wasps, .about-moths, .about-bark-beetles {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 15px;
+  color: #5d5d65;
+}
+
+.order, .learn-more {
+  cursor: pointer;
+  width: 240px;
+  height: 52px; 
+  padding: 3px 32px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.6s;
+}
+
+.order {
+  margin-bottom: 8px;
+  color: #fff;
+  background-color: #5d8bff;
+}
+
+.order:hover {
+  background-color: #355dc3;
+}
+
+.learn-more {
+  color: #5d8bff;
+  border: 1px solid #5d8bff;
+  background-color: #fff;
+}
+
+.learn-more:hover {
+  color: #355dc3;
+  border: 1px solid #355dc3;
+}
+
+/* Container-for-arrows */
+
+.container-for-arrows {
+  display: flex;
+  flex-direction: row;
+  width: 130px;
+  height: 56px;
+}
+
+.ellipse-for-arrow-left, .ellipse-for-arrow-right {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 56px;
+  border-radius: 100%;
+  transition: 0.6s;
+  background-color: #5d8bff;
+}
+
+.ellipse-for-arrow-left:hover {
+  background-color: #355dc3;
+}
+
+.ellipse-for-arrow-right:hover {
+  background-color: #355dc3;
+}
+
+.ellipse-for-arrow-left {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1345px) {
+  
+  .top-part {
+    padding: 171px 30px 171px 30px;
+  }
+
+  .bottom-part {
+    padding: 85px 30px 51px 30px;
+  }
+
+}
+
+@media screen and (max-width: 1245px) {
+
+  .top-part {
+    padding: 171px 15px 171px 15px;
+  }
+
+  .container-for-insects {
+    height: 1854px;
+  }
+
+  .top-part-insects {
+    flex-direction: column;
+    height: 926px;
+  }
+
+  .container-top-part-left, .container-top-part-right {
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .container-top-part-left {
+    align-items: end;
+  }
+
+  .container-top-part-right {
+    align-items: end;
+    margin: 0;
+  }
+
+  .container-insects-first, .container-insects-second {
+    margin-top: 10px;
+  }
+
+  .container-insects-first, .container-insects-second, .container-insects-third, 
+  .container-insects-fifth, .container-insects-seventh {
+    margin: 0;
+  }
+
+  .container-insects-first, .container-insects-third, 
+  .container-insects-fifth, .container-insects-seventh {
+    margin-right: 20px;
+  }
+
+  .bottom-part-insects {
+    flex-direction: column;
+    height: 928px;
+  }
+
+  .container-bottom-part-left, .container-bottom-part-right {
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .bottom-part {
+    height: 2230px;
+    padding: 85px 0 51px 0;
+  }
+
+}
+
+@media screen and (max-width: 1185px) {
+
+  .top-part {
+    align-items: center;
+    padding: 171px 45px 171px 45px;
+  }
+  
+  .form {
+    max-height: 322px;
+  }
+  
+  .container-for-forms {
+    flex-direction: column;
+    align-items: center;
+    max-height: 160px;
+  }
+
+  .container-for-city {
+    margin: 0;
+  }
+
+  .form-for-name, .form-for-phone, .form-for-city {
+    width: 100%;
+    max-width: 265px;
+  }
+
+  .container-for-left-form {
+    justify-content: center;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1010px) {
+
+  .top-part {
+    align-items: center;
+    padding: 171px 15px 171px 15px;
+  }
+
+}
+
+@media screen and (max-width: 945px) {
+
+  .container-for-name, .container-for-phone, .container-for-city, .container-for-button {
+    max-width: 235px;
+  }
+
+  .form-for-name, .form-for-phone, .form-for-city {
+    padding: 17px 0 17px 25px;
+  }
+
+  .book-call {
+    padding: 17px 42px;
+  }
+  
+}
+
+@media screen and (max-width: 850px) {
+
+  .container-for-name, .container-for-phone, .container-for-city, .container-for-button {
+    max-width: 205px;
+  }
+
+  .book-call {
+    padding: 17px 22px;
+  }
+  
+}
+
+@media screen and (max-width: 765px) {
+
+  .name {
+    font-size: 55px;
+  }
+
+  .description {
+    margin-bottom: 35px;
+  }
+
+  .top-part {
+    padding: 0 80px 0 80px;
+  }
+
+  .form {
+    max-height: 438px;
+  }
+
+  .container-for-left-form {
+    flex-direction: column;
+    align-items: center;
+    max-height: 276px;
+  }
+
+  .container-for-forms {
+    max-height: 356px;
+  }
+
+  .container-for-name, .container-for-phone, .container-for-city, .container-for-button {
+    max-width: 265px;
+  }
+
+  .container-for-name, .container-for-phone, .container-for-city {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+  
+}
+
+@media screen and (max-width: 715px) {
+
+  .bottom-part {
+    height: 2298px;
+  }
+
+  .container-for-buttons {
+    flex-direction: column;
+    align-items: center;
+    max-height: 121px;
+  }
+
+  .container-for-services-left {
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .container-for-services-right {
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .pest-control, .disinfestation {
+    margin-bottom: 15px;
+  }
+
+  .disinfection {
+    margin: 0;
+  }
+  
+}
+
+@media screen and (max-width: 645px) {
+
+  .top-part {
+    padding: 0 40px 0 40px;
+  }
+  
+}
+
+@media screen and (max-width: 620px) {
+
+  .bottom-part {
+    height: 4148px;
+  }
+
+  .container-for-insects {
+    height: 3708px;
+  }
+
+  .top-part-insects {
+    flex-direction: column;
+    height: 1852px;
+  }
+
+  .container-top-part-left, .container-top-part-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-insects-first, .container-insects-second, .container-insects-third, 
+  .container-insects-fifth, .container-insects-seventh {
+    margin: 0;
+  }
+
+  .container-insects-first, .container-insects-second, .container-insects-third, .container-insects-forth, 
+  .container-insects-fifth, .container-insects-sixth, .container-insects-seventh, .container-insects-eighth {
+    margin-top: 10px;
+  }
+
+  .bottom-part-insects {
+    flex-direction: column;
+    height: 1856px;
+  }
+
+  .container-bottom-part-left, .container-bottom-part-right {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+@media screen and (max-width: 565px) {
+
+  .name {
+    font-size: 50px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 510px) {
+
+  .name {
+    font-size: 48px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+  
+}
+
+@media screen and (max-width: 459px) {
+
+  .name {
+    font-size: 47px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .bottom-part {
+    height: 4269px;
+  }
+
+  .container-for-buttons {
+    max-height: 242px;
+  }
+  
+  .container-for-services-left {
+    justify-content: center;
+    height: 66%;
+  }
+
+  .container-for-services-right {
+    align-items: start;
+    height: 33%;
+  }
+
+}
+
+@media screen and (max-width: 426px) {
+
+  .top-part {
+    padding: 0 20px 0 20px;
+  }
+
+  .name {
+    font-size: 46px;
+  }
+
+  .description {
+    font-size: 11px;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  .name {
+    font-size: 45px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 353px) {
+
+  .name {
+    font-size: 35px;
+  }
+
+  .description {
+    font-size: 9px;
+  }
+
+}
